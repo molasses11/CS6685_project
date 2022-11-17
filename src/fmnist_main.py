@@ -19,7 +19,7 @@ class DWT2(object):
 		return np.float32(wave_param)
 		# return sample
 
-training_data = datasets.MNIST(
+training_data = datasets.FashionMNIST(
 	root = "data",
 	train=True,
 	download=True,
@@ -29,7 +29,7 @@ training_data = datasets.MNIST(
 		]))
 
 
-test_data = datasets.MNIST(
+test_data = datasets.FashionMNIST(
 	root="data",
 	train=False,
 	download=True,
