@@ -1,0 +1,200 @@
+(learningFL) hu@hu:~/TFDL$ python gtsrb_main.py 
+Epoch-0: 
+Training: Loss = 3.1604, Accuracy = 0.1577
+Validation: Loss = 1.9023, Accuracy = 0.3903
+
+Epoch-1: 
+Training: Loss = 1.0960, Accuracy = 0.6482
+Validation: Loss = 0.8426, Accuracy = 0.7546
+
+Epoch-2: 
+Training: Loss = 0.4341, Accuracy = 0.8602
+Validation: Loss = 0.7769, Accuracy = 0.8117
+
+Epoch-3: 
+Training: Loss = 0.2526, Accuracy = 0.9172
+Validation: Loss = 0.4857, Accuracy = 0.8669
+
+Epoch-4: 
+Training: Loss = 0.1784, Accuracy = 0.9429
+Validation: Loss = 0.5819, Accuracy = 0.8642
+
+Epoch-5: 
+Training: Loss = 0.1369, Accuracy = 0.9568
+Validation: Loss = 0.4942, Accuracy = 0.8763
+
+Epoch-6: 
+Training: Loss = 0.1099, Accuracy = 0.9646
+Validation: Loss = 0.5650, Accuracy = 0.8664
+
+Epoch-7: 
+Training: Loss = 0.1052, Accuracy = 0.9681
+Validation: Loss = 0.4596, Accuracy = 0.8906
+
+Epoch-8: 
+Training: Loss = 0.0686, Accuracy = 0.9785
+Validation: Loss = 0.5143, Accuracy = 0.8938
+
+Epoch-9: 
+Training: Loss = 0.0724, Accuracy = 0.9781
+Validation: Loss = 0.5942, Accuracy = 0.8913
+
+Epoch-10: 
+Training: Loss = 0.0809, Accuracy = 0.9735
+Validation: Loss = 0.4935, Accuracy = 0.8900
+
+Epoch-11: 
+Training: Loss = 0.0602, Accuracy = 0.9814
+Validation: Loss = 0.7010, Accuracy = 0.8855
+
+Epoch-12: 
+Training: Loss = 0.0495, Accuracy = 0.9844
+Validation: Loss = 0.5106, Accuracy = 0.8984
+
+Epoch-13: 
+Training: Loss = 0.0580, Accuracy = 0.9823
+Validation: Loss = 0.5179, Accuracy = 0.9017
+
+Epoch-14: 
+Training: Loss = 0.0541, Accuracy = 0.9838
+Validation: Loss = 0.6196, Accuracy = 0.8831
+
+Epoch-15: 
+Training: Loss = 0.0822, Accuracy = 0.9767
+Validation: Loss = 0.5266, Accuracy = 0.9059
+
+Epoch-16: 
+Training: Loss = 0.0467, Accuracy = 0.9871
+Validation: Loss = 0.4310, Accuracy = 0.9131
+
+Epoch-17: 
+Training: Loss = 0.0510, Accuracy = 0.9853
+Validation: Loss = 0.5327, Accuracy = 0.8996
+
+Epoch-18: 
+Training: Loss = 0.0602, Accuracy = 0.9818
+Validation: Loss = 0.5505, Accuracy = 0.9089
+
+Epoch-19: 
+Training: Loss = 0.0699, Accuracy = 0.9794
+Validation: Loss = 0.4531, Accuracy = 0.9054
+
+Epoch-20: 
+Training: Loss = 0.0643, Accuracy = 0.9835
+Validation: Loss = 0.4001, Accuracy = 0.9192
+
+Epoch-21: 
+Training: Loss = 0.0479, Accuracy = 0.9852
+Validation: Loss = 0.4277, Accuracy = 0.9084
+
+Epoch-22: 
+Training: Loss = 0.0412, Accuracy = 0.9894
+Validation: Loss = 0.5270, Accuracy = 0.9171
+
+Epoch-23: 
+Training: Loss = 0.0420, Accuracy = 0.9876
+Validation: Loss = 0.4654, Accuracy = 0.9201
+
+Epoch-24: 
+Training: Loss = 0.0392, Accuracy = 0.9888
+Validation: Loss = 0.4750, Accuracy = 0.9160
+
+Epoch-25: 
+Training: Loss = 0.0367, Accuracy = 0.9898
+Validation: Loss = 0.5203, Accuracy = 0.9147
+
+Epoch-26: 
+Training: Loss = 0.0435, Accuracy = 0.9883
+Validation: Loss = 0.4157, Accuracy = 0.9174
+
+Epoch-27: 
+Training: Loss = 0.0345, Accuracy = 0.9905
+Validation: Loss = 0.5204, Accuracy = 0.9113
+
+Epoch-28: 
+Training: Loss = 0.0390, Accuracy = 0.9896
+Validation: Loss = 0.5393, Accuracy = 0.9120
+
+Epoch-29: 
+Training: Loss = 0.0536, Accuracy = 0.9856
+Validation: Loss = 0.6436, Accuracy = 0.8937
+
+Epoch-30: 
+Training: Loss = 0.1040, Accuracy = 0.9739
+Validation: Loss = 0.5861, Accuracy = 0.9153
+
+Epoch-31: 
+Training: Loss = 0.0722, Accuracy = 0.9814
+Validation: Loss = 0.5417, Accuracy = 0.9096
+
+Epoch-32: 
+Training: Loss = 0.0470, Accuracy = 0.9877
+Validation: Loss = 0.6169, Accuracy = 0.9103
+
+Epoch-33: 
+Training: Loss = 0.0367, Accuracy = 0.9908
+Validation: Loss = 0.4299, Accuracy = 0.9252
+
+Epoch-34: 
+Training: Loss = 0.0821, Accuracy = 0.9792
+Validation: Loss = 0.4913, Accuracy = 0.9199
+
+Epoch-35: 
+Training: Loss = 0.0579, Accuracy = 0.9862
+Validation: Loss = 0.4143, Accuracy = 0.9092
+
+Epoch-36: 
+Training: Loss = 0.0372, Accuracy = 0.9903
+Validation: Loss = 0.3686, Accuracy = 0.9234
+
+Epoch-37: 
+Training: Loss = 0.0521, Accuracy = 0.9879
+Validation: Loss = 0.5399, Accuracy = 0.9147
+
+Epoch-38: 
+Training: Loss = 0.0320, Accuracy = 0.9914
+Validation: Loss = 0.4925, Accuracy = 0.9266
+
+Epoch-39: 
+Training: Loss = 0.0460, Accuracy = 0.9898
+Validation: Loss = 0.4499, Accuracy = 0.9129
+
+Epoch-40: 
+Training: Loss = 0.0269, Accuracy = 0.9926
+Validation: Loss = 0.3847, Accuracy = 0.9277
+
+Epoch-41: 
+Training: Loss = 0.0161, Accuracy = 0.9957
+Validation: Loss = 0.4047, Accuracy = 0.9342
+
+Epoch-42: 
+Training: Loss = 0.0207, Accuracy = 0.9950
+Validation: Loss = 0.3927, Accuracy = 0.9327
+
+Epoch-43: 
+Training: Loss = 0.0271, Accuracy = 0.9934
+Validation: Loss = 0.5822, Accuracy = 0.9224
+
+Epoch-44: 
+Training: Loss = 0.0334, Accuracy = 0.9915
+Validation: Loss = 0.6643, Accuracy = 0.9073
+
+Epoch-45: 
+Training: Loss = 0.0455, Accuracy = 0.9888
+Validation: Loss = 0.4824, Accuracy = 0.9201
+
+Epoch-46: 
+Training: Loss = 0.0295, Accuracy = 0.9927
+Validation: Loss = 0.5373, Accuracy = 0.9228
+
+Epoch-47: 
+Training: Loss = 0.0528, Accuracy = 0.9883
+Validation: Loss = 0.5321, Accuracy = 0.9179
+
+Epoch-48: 
+Training: Loss = 0.0518, Accuracy = 0.9882
+Validation: Loss = 0.4537, Accuracy = 0.9223
+
+Epoch-49: 
+Training: Loss = 0.0289, Accuracy = 0.9926
+Validation: Loss = 0.5806, Accuracy = 0.9207
