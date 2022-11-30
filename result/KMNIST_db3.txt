@@ -1,0 +1,422 @@
+(learningFL) hu@hu:~/TFDL$ python kmnist_main.py 
+Epoch 1
+-------------------------------
+loss: 3.942433  [    0/60000]
+Test Error: 
+ Accuracy: 7.6%, Avg loss: 0.058222 
+
+loss: 0.673440  [ 6400/60000]
+Test Error: 
+ Accuracy: 63.5%, Avg loss: 0.017416 
+
+loss: 0.480782  [12800/60000]
+Test Error: 
+ Accuracy: 74.2%, Avg loss: 0.012831 
+
+loss: 0.425640  [19200/60000]
+Test Error: 
+ Accuracy: 75.0%, Avg loss: 0.011530 
+
+loss: 0.380847  [25600/60000]
+Test Error: 
+ Accuracy: 76.8%, Avg loss: 0.012478 
+
+loss: 0.343359  [32000/60000]
+Test Error: 
+ Accuracy: 82.8%, Avg loss: 0.009025 
+
+loss: 0.299464  [38400/60000]
+Test Error: 
+ Accuracy: 84.4%, Avg loss: 0.007806 
+
+loss: 0.347830  [44800/60000]
+Test Error: 
+ Accuracy: 84.3%, Avg loss: 0.008136 
+
+loss: 0.244474  [51200/60000]
+Test Error: 
+ Accuracy: 86.1%, Avg loss: 0.007161 
+
+loss: 0.144801  [57600/60000]
+Test Error: 
+ Accuracy: 85.7%, Avg loss: 0.007701 
+
+Epoch 2
+-------------------------------
+loss: 0.161913  [    0/60000]
+Test Error: 
+ Accuracy: 83.8%, Avg loss: 0.008127 
+
+loss: 0.087057  [ 6400/60000]
+Test Error: 
+ Accuracy: 87.2%, Avg loss: 0.006866 
+
+loss: 0.388211  [12800/60000]
+Test Error: 
+ Accuracy: 89.1%, Avg loss: 0.005674 
+
+loss: 0.100952  [19200/60000]
+Test Error: 
+ Accuracy: 88.6%, Avg loss: 0.006277 
+
+loss: 0.085031  [25600/60000]
+Test Error: 
+ Accuracy: 88.7%, Avg loss: 0.006349 
+
+loss: 0.224122  [32000/60000]
+Test Error: 
+ Accuracy: 87.2%, Avg loss: 0.006675 
+
+loss: 0.113339  [38400/60000]
+Test Error: 
+ Accuracy: 87.4%, Avg loss: 0.006601 
+
+loss: 0.173202  [44800/60000]
+Test Error: 
+ Accuracy: 89.5%, Avg loss: 0.005604 
+
+loss: 0.228631  [51200/60000]
+Test Error: 
+ Accuracy: 87.7%, Avg loss: 0.006584 
+
+loss: 0.231370  [57600/60000]
+Test Error: 
+ Accuracy: 90.3%, Avg loss: 0.005343 
+
+Epoch 3
+-------------------------------
+loss: 0.131586  [    0/60000]
+Test Error: 
+ Accuracy: 90.3%, Avg loss: 0.005108 
+
+loss: 0.109869  [ 6400/60000]
+Test Error: 
+ Accuracy: 91.1%, Avg loss: 0.005221 
+
+loss: 0.167476  [12800/60000]
+Test Error: 
+ Accuracy: 90.8%, Avg loss: 0.004970 
+
+loss: 0.128608  [19200/60000]
+Test Error: 
+ Accuracy: 90.8%, Avg loss: 0.005051 
+
+loss: 0.142992  [25600/60000]
+Test Error: 
+ Accuracy: 89.5%, Avg loss: 0.005924 
+
+loss: 0.034434  [32000/60000]
+Test Error: 
+ Accuracy: 89.9%, Avg loss: 0.005594 
+
+loss: 0.159527  [38400/60000]
+Test Error: 
+ Accuracy: 90.0%, Avg loss: 0.005738 
+
+loss: 0.173456  [44800/60000]
+Test Error: 
+ Accuracy: 91.5%, Avg loss: 0.004774 
+
+loss: 0.254021  [51200/60000]
+Test Error: 
+ Accuracy: 91.3%, Avg loss: 0.004746 
+
+loss: 0.212816  [57600/60000]
+Test Error: 
+ Accuracy: 91.9%, Avg loss: 0.004714 
+
+Epoch 4
+-------------------------------
+loss: 0.058340  [    0/60000]
+Test Error: 
+ Accuracy: 92.5%, Avg loss: 0.004370 
+
+loss: 0.093021  [ 6400/60000]
+Test Error: 
+ Accuracy: 91.6%, Avg loss: 0.005087 
+
+loss: 0.002221  [12800/60000]
+Test Error: 
+ Accuracy: 91.5%, Avg loss: 0.005436 
+
+loss: 0.087578  [19200/60000]
+Test Error: 
+ Accuracy: 91.9%, Avg loss: 0.005031 
+
+loss: 0.090944  [25600/60000]
+Test Error: 
+ Accuracy: 89.1%, Avg loss: 0.007045 
+
+loss: 0.136465  [32000/60000]
+Test Error: 
+ Accuracy: 91.0%, Avg loss: 0.005097 
+
+loss: 0.064850  [38400/60000]
+Test Error: 
+ Accuracy: 90.6%, Avg loss: 0.005626 
+
+loss: 0.125769  [44800/60000]
+Test Error: 
+ Accuracy: 92.3%, Avg loss: 0.004433 
+
+loss: 0.101780  [51200/60000]
+Test Error: 
+ Accuracy: 92.0%, Avg loss: 0.004319 
+
+loss: 0.070327  [57600/60000]
+Test Error: 
+ Accuracy: 91.8%, Avg loss: 0.005080 
+
+Epoch 5
+-------------------------------
+loss: 0.098018  [    0/60000]
+Test Error: 
+ Accuracy: 91.7%, Avg loss: 0.005055 
+
+loss: 0.034750  [ 6400/60000]
+Test Error: 
+ Accuracy: 91.0%, Avg loss: 0.005791 
+
+loss: 0.031545  [12800/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004341 
+
+loss: 0.095340  [19200/60000]
+Test Error: 
+ Accuracy: 91.1%, Avg loss: 0.005763 
+
+loss: 0.012228  [25600/60000]
+Test Error: 
+ Accuracy: 91.9%, Avg loss: 0.005548 
+
+loss: 0.029138  [32000/60000]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.004246 
+
+loss: 0.059143  [38400/60000]
+Test Error: 
+ Accuracy: 92.3%, Avg loss: 0.005739 
+
+loss: 0.042609  [44800/60000]
+Test Error: 
+ Accuracy: 92.6%, Avg loss: 0.004759 
+
+loss: 0.064524  [51200/60000]
+Test Error: 
+ Accuracy: 92.9%, Avg loss: 0.004611 
+
+loss: 0.087499  [57600/60000]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.004211 
+
+Epoch 6
+-------------------------------
+loss: 0.089590  [    0/60000]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.004415 
+
+loss: 0.113832  [ 6400/60000]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.004206 
+
+loss: 0.090029  [12800/60000]
+Test Error: 
+ Accuracy: 93.5%, Avg loss: 0.004519 
+
+loss: 0.062939  [19200/60000]
+Test Error: 
+ Accuracy: 91.9%, Avg loss: 0.005760 
+
+loss: 0.191863  [25600/60000]
+Test Error: 
+ Accuracy: 90.9%, Avg loss: 0.005639 
+
+loss: 0.224502  [32000/60000]
+Test Error: 
+ Accuracy: 92.6%, Avg loss: 0.005062 
+
+loss: 0.094552  [38400/60000]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.004030 
+
+loss: 0.152904  [44800/60000]
+Test Error: 
+ Accuracy: 92.0%, Avg loss: 0.004581 
+
+loss: 0.203550  [51200/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.005155 
+
+loss: 0.141936  [57600/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004835 
+
+Epoch 7
+-------------------------------
+loss: 0.165578  [    0/60000]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.004020 
+
+loss: 0.045895  [ 6400/60000]
+Test Error: 
+ Accuracy: 93.8%, Avg loss: 0.004417 
+
+loss: 0.141358  [12800/60000]
+Test Error: 
+ Accuracy: 92.1%, Avg loss: 0.005309 
+
+loss: 0.069898  [19200/60000]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.004646 
+
+loss: 0.287670  [25600/60000]
+Test Error: 
+ Accuracy: 89.9%, Avg loss: 0.006469 
+
+loss: 0.017354  [32000/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004492 
+
+loss: 0.004562  [38400/60000]
+Test Error: 
+ Accuracy: 93.7%, Avg loss: 0.004165 
+
+loss: 0.081404  [44800/60000]
+Test Error: 
+ Accuracy: 91.8%, Avg loss: 0.005248 
+
+loss: 0.116062  [51200/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004572 
+
+loss: 0.009653  [57600/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004446 
+
+Epoch 8
+-------------------------------
+loss: 0.115627  [    0/60000]
+Test Error: 
+ Accuracy: 91.1%, Avg loss: 0.006112 
+
+loss: 0.044792  [ 6400/60000]
+Test Error: 
+ Accuracy: 93.7%, Avg loss: 0.004404 
+
+loss: 0.146060  [12800/60000]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.005093 
+
+loss: 0.002271  [19200/60000]
+Test Error: 
+ Accuracy: 93.7%, Avg loss: 0.004423 
+
+loss: 0.111590  [25600/60000]
+Test Error: 
+ Accuracy: 93.8%, Avg loss: 0.004177 
+
+loss: 0.026525  [32000/60000]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.004463 
+
+loss: 0.096495  [38400/60000]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.004916 
+
+loss: 0.027975  [44800/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004609 
+
+loss: 0.047669  [51200/60000]
+Test Error: 
+ Accuracy: 93.7%, Avg loss: 0.004637 
+
+loss: 0.123831  [57600/60000]
+Test Error: 
+ Accuracy: 93.6%, Avg loss: 0.004377 
+
+Epoch 9
+-------------------------------
+loss: 0.065826  [    0/60000]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.004616 
+
+loss: 0.036457  [ 6400/60000]
+Test Error: 
+ Accuracy: 93.7%, Avg loss: 0.005097 
+
+loss: 0.084604  [12800/60000]
+Test Error: 
+ Accuracy: 92.7%, Avg loss: 0.005695 
+
+loss: 0.069233  [19200/60000]
+Test Error: 
+ Accuracy: 94.2%, Avg loss: 0.003979 
+
+loss: 0.114749  [25600/60000]
+Test Error: 
+ Accuracy: 93.5%, Avg loss: 0.005519 
+
+loss: 0.050462  [32000/60000]
+Test Error: 
+ Accuracy: 91.9%, Avg loss: 0.006289 
+
+loss: 0.027091  [38400/60000]
+Test Error: 
+ Accuracy: 92.9%, Avg loss: 0.004894 
+
+loss: 0.081417  [44800/60000]
+Test Error: 
+ Accuracy: 92.9%, Avg loss: 0.005022 
+
+loss: 0.025634  [51200/60000]
+Test Error: 
+ Accuracy: 92.7%, Avg loss: 0.004964 
+
+loss: 0.019429  [57600/60000]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.004644 
+
+Epoch 10
+-------------------------------
+loss: 0.012360  [    0/60000]
+Test Error: 
+ Accuracy: 93.5%, Avg loss: 0.004859 
+
+loss: 0.059129  [ 6400/60000]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.004469 
+
+loss: 0.008363  [12800/60000]
+Test Error: 
+ Accuracy: 93.8%, Avg loss: 0.004824 
+
+loss: 0.070513  [19200/60000]
+Test Error: 
+ Accuracy: 92.1%, Avg loss: 0.005923 
+
+loss: 0.166457  [25600/60000]
+Test Error: 
+ Accuracy: 92.9%, Avg loss: 0.005525 
+
+loss: 0.089728  [32000/60000]
+Test Error: 
+ Accuracy: 93.9%, Avg loss: 0.004259 
+
+loss: 0.058543  [38400/60000]
+Test Error: 
+ Accuracy: 92.6%, Avg loss: 0.005132 
+
+loss: 0.019664  [44800/60000]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.004947 
+
+loss: 0.045646  [51200/60000]
+Test Error: 
+ Accuracy: 93.9%, Avg loss: 0.004116 
+
+loss: 0.038774  [57600/60000]
+Test Error: 
+ Accuracy: 94.1%, Avg loss: 0.004492 
+
+Done!
