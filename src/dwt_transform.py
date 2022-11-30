@@ -11,15 +11,15 @@ class DWT2Numpy:
 
     def __call__(self, sample):
 
-        sample_array = np.array(sample)
+        sample_array = np.squeeze(np.array(sample))
         if sample_array.ndim == 2:
             sample_array = sample_array[..., None]
         wavelet_channels = []
         for channel_idx in range(sample_array.shape[-1]):
             coeffs = pywt.dwt2(sample_array[..., channel_idx], self.wavelet)
             cA, (cH, cV, cD) = coeffs
-            wavelet_channels.extend([cA[None], cH[None], cV[None], cD[None]])
-        wave_params = np.concatenate(wavelet_channels, axis=0)
+            wavelet_channels.extend([cA[..., None], cH[..., None], cV[..., None], cD[..., None]])
+        wave_params = np.concatenate(wavelet_channels, axis=2)
         return wave_params
 
         sample_r = sample_array[:, :, 0]

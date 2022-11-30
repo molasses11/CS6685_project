@@ -41,8 +41,15 @@ if __name__ == "__main__":
         num_workers=4,
     )
 
+    for batches in trainloader:
+        print(batches[0].shape)
+        break
+
     net = network.Net(
-        conv_layers=[(24, 5), (48, 3)], linear_layers=[256, 128], output_size=10
+        conv_layers=[(24, 5), (48, 3)],
+        linear_layers=[256, 128],
+        output_size=10,
+        output_activation=torch.nn.Identity(),
     )
     loss = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(net.parameters(), lr=0.001, momentum=0.9)

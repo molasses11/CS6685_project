@@ -6,8 +6,9 @@ import torch.nn as nn
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
+
 class Net(nn.Module):
-    def __init__(self, conv_layers, linear_layers, output_size):
+    def __init__(self, conv_layers, linear_layers, output_size, output_activation):
         super().__init__()
 
         self.conv = nn.Sequential(
@@ -28,19 +29,21 @@ class Net(nn.Module):
             )
         )
         self.out = nn.LazyLinear(output_size)
+        self.output_activation = output_activation
 
     def forward(self, x):
         x = self.conv(x)
         x = torch.flatten(x, 1)  # flatten all dimensions except batch
         x = self.fc(x)
-        # x = torch.sigmoid(self.out(x))
         x = self.out(x)
+        x = self.output_activation(x)
         return x
 
 
 def train(dataloader, model, loss_fn, optimizer, device):
     size = len(dataloader.dataset)
     model.train()
+    n = len(dataloader)
     for batch, (X, y) in enumerate(dataloader):
         X, y = X.to(device, dtype=torch.float32), y.to(device)
 
@@ -53,7 +56,7 @@ def train(dataloader, model, loss_fn, optimizer, device):
         loss.backward()
         optimizer.step()
 
-        if batch % 100 == 0:
+        if batch % (n // 10) == 0:
             loss, current = loss.item(), batch * len(X)
             print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
 
