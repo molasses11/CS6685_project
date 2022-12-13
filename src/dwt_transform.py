@@ -9,7 +9,7 @@ class DWT2Numpy:
     def __init__(self, wavelet):
         self.wavelet = wavelet
 
-    def __call__(self, sample):
+    def __call__(self, sample, normalize=False):
 
         sample_array = np.squeeze(np.array(sample))
         if sample_array.ndim == 2:
@@ -18,6 +18,13 @@ class DWT2Numpy:
         for channel_idx in range(sample_array.shape[-1]):
             coeffs = pywt.dwt2(sample_array[..., channel_idx], self.wavelet)
             cA, (cH, cV, cD) = coeffs
+            def normalize_fn(item):
+                return (item - item.min()) / (item.max() - item.min())
+            if normalize:
+                cA = normalize_fn(cA)
+                cH = normalize_fn(cH)
+                cV = normalize_fn(cV)
+                cD = normalize_fn(cD)
             wavelet_channels.extend([cA[..., None], cH[..., None], cV[..., None], cD[..., None]])
         wave_params = np.concatenate(wavelet_channels, axis=2)
         return wave_params

@@ -1,7 +1,5 @@
 import os.path
 
-import matplotlib.pyplot as plt
-
 import torchvision as tv
 
 
@@ -39,88 +37,52 @@ class ButterflyDataset(tv.datasets.ImageFolder):
         super().__init__(new_root, **kwargs)
 
 
-# class ButterflyDatasetOld(data.Dataset):
-#     CSV_PATH = "BUTTERFLIES.csv"
-
-#     def __init__(self, root, datasplit="train", transform=None) -> None:
-#         """Initialize.
-
-#         Args:
-#             root: The path to the root for data. The actual butterfly dataset
-#                 will be in <root>/butterflies.
-#             datasplit: The portion of the data to load/use. One of train, test,
-#                 or valid.
-#         """
-#         root = os.path.expanduser(os.path.normpath(root))
-#         self.root = os.path.join(root, "butterflies")
-#         if not os.path.exists(self.root) or not os.path.exists(
-#             os.path.join(self.root, self.CSV_PATH)
-#         ):
-#             raise ValueError(
-#                 f"The dataset could not be found in {self.root}. "
-#                 "Download from: "
-#                 "https://www.kaggle.com/datasets/gpiosenka/"
-#                 "butterfly-images40-species/download?datasetVersionNumber=12 "
-#                 f"and extract to the folder {self.root}."
-#             )
-#         index = np.genfromtxt(
-#             os.path.join(self.root, self.CSV_PATH),
-#             dtype=None,
-#             delimiter=",",
-#             names=True,
-#             encoding=None,
-#         )
-#         datasplit_idxs = index["data_set"] == datasplit
-#         self.index = index[datasplit_idxs]
-#         self.classes = self._get_classes()
-#         self.transform = transform
-
-#     def __len__(self):
-#         return len(self.index)
-
-#     def __getitem__(self, idx):
-#         if torch.is_tensor(idx):
-#             idx = idx.tolist()
-
-#         row = self.index[idx]
-#         image = io.imread(os.path.join(self.root, row["filepaths"]))
-#         image = Image.fromarray(image)
-#         target = row["class_index"]
-#         if self.transform is not None:
-#             image = self.transform(image)
-#             target = torch.Tensor(target)
-#         return image, target
-
-#     def _get_classes(self):
-#         idxs = self.index["class_index"]
-#         labels = self.index["labels"]
-#         idx_label_set = set()
-#         for idx, label in zip(idxs, labels):
-#             if (idx, label) in idx_label_set:
-#                 continue
-#             idx_label_set.add((idx, label))
-
-#         classes = [""] * len(idx_label_set)
-#         for idx, label in idx_label_set:
-#             classes[int(idx)] = label.lower()
-#         return classes
-
-
 if __name__ == "__main__":
+    import itertools
     import random
+    import matplotlib.gridspec
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from PIL import Image
+    from dwt_transform import DWT2Numpy
 
     butterflies_data = ButterflyDataset(
         root=os.path.join(os.path.dirname(__file__), "../data")
     )
     print(len(butterflies_data.classes))
-    rand_idxs = (random.randint(0, len(butterflies_data) - 1) for _ in range(25))
-    plt.subplots(5, 5, layout="constrained", figsize=(12, 8))
-    plt.suptitle("Sample Butterfly Images and Labels")
+    random.seed(42)
+    rand_idxs = (random.randint(0, len(butterflies_data) - 1) for _ in range(9))
+    fig, axs = plt.subplots(3, 3, layout="constrained", figsize=(12, 8))
+    # dwt_fig, dwt_axs = plt.subplots(3, 3, layout="constrained", figsize=(12, 8))
+    dwt_fig = plt.figure(layout="constrained", figsize=(12, 8))
+    dwt_gridspec = matplotlib.gridspec.GridSpec(3, 3, figure=dwt_fig)
+    fig.suptitle("Sample Butterfly Images and Labels")
+    dwt_fig.suptitle("DWT Sample Butterfly Images and Labels")
+
+    dwt = DWT2Numpy("haar")
+    # dwt = DWT2Numpy("db2")
+
+    def plt_im(fig, idx, image, title):
+        plt.figure(fig)
+        plt.subplot(3, 3, idx + 1)
+        plt.title(title)
+        plt.imshow(image)
+        plt.xticks([])
+        plt.yticks([])
+
     for i, idx in enumerate(rand_idxs):
         image, label = butterflies_data[idx]
-        plt.subplot(5, 5, i + 1)
-        plt.tick_params(left=False, labelleft=False, labelbottom=False, bottom=False)
-        # print(image.shape, label)
-        plt.title(butterflies_data.classes[label])
-        plt.imshow(image)
+        plt_im(fig, i, image, butterflies_data.classes[label])
+        transforms = dwt(image, normalize=True)
+
+        dwt_subfig = dwt_fig.add_subfigure(dwt_gridspec[i])
+        dwt_sub_axs = dwt_subfig.subplots(2, 2, gridspec_kw={"wspace":0, "hspace":0})
+        dwt_sub_axs = itertools.chain.from_iterable(dwt_sub_axs)  # flatten
+        for dwt_sub_ax, tf_idx in zip(dwt_sub_axs, range(4)):
+            dwt_sub_ax.imshow(transforms[..., tf_idx::4])
+            plt.sca(dwt_sub_ax)
+            plt.xticks([])
+            plt.yticks([])
+            dwt_subfig.suptitle(butterflies_data.classes[label])
+
     plt.show()
